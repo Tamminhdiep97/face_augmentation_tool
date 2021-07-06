@@ -8,6 +8,8 @@ maskconfig_path = 'mask_module/masks/masks.cfg'
 pattern = False
 pattern_weight = False
 
+prob = 0.05
+
 # retina detector
 retinaface = True
 require_size = 112
@@ -21,3 +23,5 @@ if retinaface:
         weights = 'detector/retinaface/weights/mobilenet0.25_Final.pth'
 
     vis_thres = 0.8
+
+image_folder = 'train_data'

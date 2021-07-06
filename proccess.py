@@ -11,7 +11,7 @@ from tqdm import tqdm
 import mask_module
 
 
-path_proccess = 'train_data'
+path_proccess = conf.image_folder
 mask_machine = mask_module.AUTO_MASK(conf)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 face_detector =  detector.initial_face_detector(conf, device)
@@ -52,7 +52,7 @@ for folder in tqdm(os.listdir(path_proccess)):
         continue
     count_item = 0
     mode = 0
-    number_aug = int(0.05*total_items)
+    number_aug = int(conf.prob*total_items)
     for i in os.listdir(folder_image_path):
        if mode < 3:
             img = cv2.imread(opj(folder_image_path, i))
