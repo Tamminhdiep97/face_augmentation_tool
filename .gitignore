@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+# pytorch model and c++ dlib model
+*.pth
+*.dat
 
 # C extensions
 *.so
