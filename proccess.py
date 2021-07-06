@@ -48,7 +48,7 @@ for folder in tqdm(os.listdir(path_proccess)):
         continue
     folder_image_path = opj(path_proccess, folder)
     total_items = len(os.listdir(folder_image_path))
-    if total_items < 20:
+    if total_items < conf.minimum_image:
         continue
     count_item = 0
     mode = 0

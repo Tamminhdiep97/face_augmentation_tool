@@ -8,7 +8,6 @@ maskconfig_path = 'mask_module/masks/masks.cfg'
 pattern = False
 pattern_weight = False
 
-prob = 0.05
 
 # retina detector
 retinaface = True
@@ -24,4 +23,6 @@ if retinaface:
 
     vis_thres = 0.8
 
-image_folder = 'train_data'
+image_folder = 'data_train'
+prob = 0.05
+minimum_image = 20

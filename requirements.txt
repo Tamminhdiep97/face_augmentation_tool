@@ -1,0 +1,17 @@
+# dlib env for Mask module
+cmake==3.20.2
+dlib==19.7.0
+dotmap
+scikit-image==0.17.2
+scipy==1.5.4
+
+# Image processing
+opencv-python==3.4.10.35
+Pillow==8.2.0
+tqdm
+
+# download tool
+requests==2.25.1
+imutils==0.5.4
+addict==2.4.0
+yapf==0.31.0
